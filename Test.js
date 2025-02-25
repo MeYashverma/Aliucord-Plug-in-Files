@@ -1,56 +1,63 @@
-/* Animated Purple Galaxy Theme */
-@keyframes galaxyBackground {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-body {
-  background: linear-gradient(-45deg, #3c419b, #6c63b8, #514a8d, #161519);
-  background-size: 400% 400%;
-  animation: galaxyBackground 15s ease infinite;
-  color: #F4F4F4;
-  font-family: 'ggsans-Normal', sans-serif;
-}
-
-/* Animated Text Glow */
-@keyframes textGlow {
-  0% { text-shadow: 0 0 5px #fbd1e6, 0 0 10px #d8c28f; }
-  50% { text-shadow: 0 0 10px #fbd1e6, 0 0 20px #d8c28f; }
-  100% { text-shadow: 0 0 5px #fbd1e6, 0 0 10px #d8c28f; }
-}
-
-h1, h2, h3, .title {
-  animation: textGlow 3s ease-in-out infinite alternate;
-}
-
-/* Button Styling */
-button {
-  background-color: #5B539D;
-  border: none;
-  padding: 10px 20px;
-  color: #F4F4F4;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-  background-color: #514a8d;
-  transform: scale(1.05);
-}
-
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #5B539D;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background: #29272E;
+{
+  "name": "Purple Galaxy Enhanced",
+  "author": "Vodka & ChatGPT",
+  "version": "1.1",
+  "description": "An upgraded version of Purple Galaxy with better contrast, neon highlights, and deep space vibes.",
+  "semanticColors": {
+    "HEADER_PRIMARY": "#FFFFFF",
+    "HEADER_SECONDARY": "#D7B8FF",
+    "TEXT_NORMAL": "#C9A7F9",
+    "TEXT_MUTED": "#9E79C2",
+    "BACKGROUND_PRIMARY": "#1A1A3D",
+    "BACKGROUND_SECONDARY": "#2B2148",
+    "BACKGROUND_ACCENT": "#3D2F67",
+    "BACKGROUND_TERTIARY": "#251B42",
+    "BACKGROUND_FLOATING": "#32244F",
+    "BACKGROUND_MODIFIER_ACCENT": "#A272F7",
+    "BACKGROUND_MODIFIER_HOVER": "#553388",
+    "BACKGROUND_MODIFIER_ACTIVE": "#6A42A0",
+    "BACKGROUND_MODIFIER_SELECTED": "#7C56C0",
+    "CHANNELS_DEFAULT": "#BF92FF",
+    "CHANNEL_ICON": "#D1AFFF",
+    "CHANNEL_TEXT_AREA_BACKGROUND": "#140C2E",
+    "CHANNEL_TEXT_AREA_PLACEHOLDER": "#6C5A92",
+    "BUTTON_PRIMARY_BACKGROUND": "#7C56C0",
+    "BUTTON_PRIMARY_TEXT": "#FFFFFF",
+    "BUTTON_SECONDARY_BACKGROUND": "#4A3780",
+    "BUTTON_SECONDARY_TEXT": "#C9A7F9",
+    "INPUT_BACKGROUND": "#251B42",
+    "INPUT_TEXT": "#D1AFFF",
+    "INPUT_PLACEHOLDER_TEXT": "#A060F7",
+    "SCROLLBAR_THUMB": "#5C4699",
+    "SCROLLBAR_TRACK": "#1A1A3D",
+    "MESSAGE_BACKGROUND": "#2C1A3A",
+    "MESSAGE_HOVER": "#3B2755",
+    "MESSAGE_SELECTED": "#4A3780",
+    "MENTION_HIGHLIGHT": "#D39BFF",
+    "MENTION_BACKGROUND": "#3D2F67",
+    "LINK_COLOR": "#B472FF",
+    "HIGHLIGHT_TEXT": "#F4C4FF",
+    "HIGHLIGHT_BACKGROUND": "#251B42"
+  },
+  "rawColors": {
+    "PRIMARY_DARK": "#2C1A3A",
+    "PRIMARY_100": "#3B2755",
+    "PRIMARY_200": "#8D57D6",
+    "PRIMARY_300": "#A060F7",
+    "PRIMARY_400": "#B472FF",
+    "PRIMARY_500": "#D39BFF",
+    "SECONDARY_100": "#19102D",
+    "SECONDARY_200": "#1F153A",
+    "SECONDARY_300": "#332556",
+    "SECONDARY_400": "#4A3780",
+    "SECONDARY_500": "#5C4699",
+    "NEON_PURPLE": "#D793F7",
+    "GALAXY_BLUE": "#6C5A92",
+    "DARK_STAR": "#1A1A3D"
+  },
+  "customStyles": {
+    "gradientBackground": "linear-gradient(135deg, #1A1A3D, #4A3780, #D39BFF)",
+    "glowEffect": "0px 0px 8px rgba(180, 114, 255, 0.5)",
+    "borderRadius": "8px"
+  }
 }
